@@ -13,7 +13,7 @@ export const Contact = () => {
           <div>
             <div className="w-full mr-5 xl:absolute right-0 top-12 xl:w-1/2 md:ml-1"> 
               <form method="POST" action="https://getform.io/f/9626f18f-ef6b-4932-8888-00b491445880">
-              <div className='flex flex-col mt-5 mr-5 pl-3 xl:ml-32 phone:pl-0'>
+              <div className='flex flex-col mt-5 mr-5 pl-1 xl:ml-32 phone:pl-0'>
                       <h4 className='mt-4 text-[20px] font-light'>NAME</h4>
                       <input className='p-2 bg-black border border-white rounded-[8px]' type="text" name='name' required/>
                       <h1 className='mt-4 text-[20px] font-light'>EMAIL</h1> 
