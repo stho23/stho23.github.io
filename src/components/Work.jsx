@@ -30,9 +30,9 @@ export const Work = () => {
       <div>
         <div className='flex items-center justify-between flex-wrap '>
           <div className='mb-7 sm:mb-0 pt-8 ml-12 w-full'>
-            <h1 className='text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-6xl font-bold pt-10 text-white phone:ml-[-5%]'>PROJECTS
+            <h1 className='text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-6xl font-bold pt-10 text-white max-phone:ml-[-5%]'>PROJECTS
             </h1>
-          <div className='flex gap-3 mt-10 phone:h-12 text-[12px] phone:ml-[-6%]'>
+          <div className='flex gap-3 mt-10 max-phone:h-8 max-phone:text-[9px] whitespace-nowrap max-phone:ml-[-6%]'>
           <button
                 onClick={() => setSelectTab('all')}
                 className={`py-1 px-4 rounded-[18px] ${
@@ -51,7 +51,7 @@ export const Work = () => {
               </button>
               <button
                 onClick={() => setSelectTab('ux-design')}
-                className={`py-1 px-4 rounded-[18px] phone:mr-20 ${
+                className={`py-1 px-4 rounded-[18px] ${
                   selectTab === 'ux-design' ? 'bg-teal border-2 border-teal text-black duration-300' : 'border-2 border-white text-white'
                 }`}
               >
@@ -60,7 +60,7 @@ export const Work = () => {
             </div>
           </div>
         </div>
-        <div className='flex items-center gap-10 grid-cols-3 flex-wrap mt-3 ml-5 md:w-screen xl:max-w-full pr-8'>
+        <div className='flex items-center gap-10 grid-cols-3 flex-wrap max-sm:mt-4 sm:mt-12 md:mt-12 ml-12 md:w-screen xl:max-w-full pr-12'>
           {
             portfolios?.slice(0, portfolios.length)?.map((portfolio,index) => (
               <div 
@@ -68,7 +68,7 @@ export const Work = () => {
               data-aos='fade-zoom-in' 
               data-aos-delay='200' 
               data-aos-duration='1000'
-              className='group max-w-screen sm:w-[95%] md:w-[75%] lg:w-[80%] xl:w-[30.2%] phone:w-screen relative z-[1]'
+              className='group max-w-screen sm:w-[95%] md:w-[78%] lg:w-[82%] xl:w-[30.2%] max-phone:w-screen relative z-[1]'
               >
               <figure className="container relative overflow-hidden group cursor-pointer" onClick={portfolio.siteUrl}>
               <div className="rounded-t-lg overflow-hidden relative group">
@@ -79,13 +79,13 @@ export const Work = () => {
                 />
               </div>
               <div className="w-full h-full absolute top-0 left-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-black bg-opacity-70 flex flex-col justify-center items-center">
-                <span className="text-white text-center phone:text-xs sm:text-xl md:text-xl lg:text-xl xl:text-sm font-semibold mx-5 font-raleway">
+                <span className="text-white text-center max-phone:text-xs sm:text-xl md:text-xl lg:text-xl xl:text-sm font-semibold mx-5 font-raleway">
                 {portfolio.description}
-                <h1 className='text-white text-md font-semibold phone:mt-3 mt-5'>Technologies: </h1>
+                <h1 className='text-white font-semibold max-phone:mt-3 mt-5'>Technologies: </h1>
                 <div className="flex flex-wrap justify-center gap-2">
                   {
                     portfolio.technologies.map((item, index) => (
-                      <span key={index} className='bg-teal text-black py-1 mt-2 px-2 rounded-[5px] sm:text-xl md:text-xl lg:text-xl xl:text-sm leading-0'>
+                      <span key={index} className='bg-teal text-black py-1 max-phone:text-[10px] max-phone:py-0.5 mt-2 px-2 rounded-[5px] sm:text-xl md:text-xl lg:text-xl xl:text-sm leading-0'>
                         {item}
                       </span>
                     ))
@@ -94,7 +94,6 @@ export const Work = () => {
               </span>
             </div>
             </figure>
-
             <div className="text-white bg-[#1D1D1D] w-full h-full pt-6 font-semibold rounded-t-none rounded-b-lg mt-[-.1%] flex pl-5 pb-5 relative group">
               <div className="transition-opacity duration-300 ease-in-out group-hover:opacity-0">
                 {portfolio.title}
