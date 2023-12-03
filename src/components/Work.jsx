@@ -32,7 +32,7 @@ export const Work = () => {
           <div className='mb-7 sm:mb-0 pt-8 ml-12 w-full'>
             <h1 className='text-6xl sm:text-6xl md:text-6xl lg:text-7xl xl:text-7xl 2xl:text-6xl font-bold pt-10 text-white max-phone:ml-[-5%]'>PROJECTS
             </h1>
-          <div className='flex gap-3 mt-10 max-phone:h-8 max-phone:text-[9px] whitespace-nowrap font-semibold max-phone:ml-[-6%]'>
+          <div className='flex gap-3 mt-10 max-phone:h-8 max-phone:text-[9px] whitespace-nowrap max-phone:ml-[-6%]'>
           <button
                 onClick={() => setSelectTab('all')}
                 className={`py-1 px-4 rounded-[18px] ${
