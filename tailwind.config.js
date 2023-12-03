@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        'phone': '360px',
+        'phone': '375px',
       },
       colors: {
         'teal': '#9AFFE1',
