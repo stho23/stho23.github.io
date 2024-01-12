@@ -100,7 +100,7 @@ export const Work = () => {
               </div>
               <div className="absolute left-0 bottom-0 pl-5 pt-1 pb-[1px] w-full h-full flex items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 ease-in-out cursor-pointer">
                 <div className='group hover:text-teal flex items-center'>
-                  <a href={portfolio.siteUrl}>Show Project</a>&#160;
+                  <a href={portfolio.siteUrl} target="_blank">Show Project</a>&#160;
                   <RxArrowTopRight className='text-[20px]'></RxArrowTopRight>
                 </div>
               </div>
